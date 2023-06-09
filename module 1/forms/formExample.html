@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <h2>form example:</h2>
+            <form>
+                <fieldset>
+                    <div>
+                        <label for="firstName">First Name</label><br/>
+                        <input type="text" name="firstName" id="firstName" required minlength="3" maxlength="10">
+                    </div>
+                    <div>
+                        <label for="lastName">Last Name</label><br/>
+                        <input type="text" name="lastName" id="lastName" required minlength="3" maxlength="10">
+                    </div>
+                    <div>
+                        <label for="email">Email</label><br/>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="password">Password</label><br/>
+                        <input type="password" name="password" id="password" required minlength="8">
+                    </div>
+                    <div>
+                        <label for="confirmPassword">Password</label><br/>
+                        <input type="password" name="confirmPassword" id="confirmPassword" required>
+                    </div>
+
+                </fieldset>
+                <div>
+                    <button type="submit">Sign-up</button>
+                </div>
+            </form>
+        </main>
+        <footer></footer>
+    </body>
+    <style>
+        input{
+            border-radius: 5px;
+        }
+        input:focus:invalid{
+            border: 2px solid red;
+            border-radius: 5px;
+        }
+    </style>
+</html>
