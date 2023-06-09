@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <form method="post">
+            <fieldset>
+                <div>
+                    <label for="email">Email Adress</label><br/>
+                    <input type="email" id="email" name="email" required minlength="4">
+                </div>
+                <div>
+                    <label for="date">Date of Booking</label><br/>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div>
+                    <label for="number">Number of People</label><br/>
+                    <input type="number" id="number" name="number" required max="8" min="1">
+                </div>
+                <div>
+                    <input type="checkbox" id="cancellation" name="cancellation" required>
+                    <label for="cancellation">I Agree with to the Cancellation policy.</label>
+                </div>
+            </fieldset>
+            <button type="submit">Book now!</button>
+        </form>
+
+        <style>
+            input{
+                border-radius: 15px;
+            }
+            input:focus:invalid{
+                border: 2px solid red;
+                border-radius: 15px;
+            }
+            button{
+                border-radius: 15px;
+                background-color: cadetblue;
+                color: black;
+
+            }
+            button:hover{
+                background-color: aqua;
+                border: 3px solid green;
+            }
+        </style>
+    </body>
+</html>
