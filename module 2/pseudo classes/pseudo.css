@@ -3,3 +3,87 @@
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
 }
+
+*::selection{
+    background-color: black;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+.section{
+    border-radius: 15px;
+    border: 1px solid black;
+    min-height: 50vh;
+    margin: 10px auto;
+}
+
+my-page{
+
+}
+
+a[href]{
+    color: brown;
+}
+a:hover{
+    background-color: brown;
+    color: white;
+}
+.wrapper{
+
+}
+.button::after{
+    content: "adding something after the class button";
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+}
+
+.button::first-letter{
+    font-weight: bold;
+    color: chartreuse;
+}
+
+.button:active{
+    background-color: cornflowerblue;
+    transform: scale(0.99);
+}
+
+.button:active::after{
+    content: "botão acionado";
+    border-radius: 99;
+    background-color: aqua;
+    color: black;
+}
+
+ul {
+    padding: 10px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+ul ~li::marker{
+    color: cornflowerblue;
+    content: '<> ';
+    font-size: 1.1em;
+}
+
+#tips::before{
+    content: "tip";
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    border-radius: 99px;
+
+}
+
+#tips::after{
+    content: "!!";
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    border-radius: 99px;
+}
