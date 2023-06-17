@@ -65,7 +65,7 @@ ul {
     font-style: italic;
 }
 
-ul ~li::marker{
+ul ~ li::marker{
     color: cornflowerblue;
     content: '<> ';
     font-size: 1.1em;
@@ -86,4 +86,22 @@ ul ~li::marker{
     color: black;
     font-weight: bold;
     border-radius: 99px;
+}
+
+div > a:link{
+    color: red;
+}
+
+div > a:visited{
+    color: chocolate;
+}
+
+div > a:hover{
+    background-color: black;
+    color: white;
+}
+
+div > a:active{
+    color: cadetblue;
+    transform: scaleX(1.2);
 }
