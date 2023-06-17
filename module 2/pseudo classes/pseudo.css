@@ -58,6 +58,7 @@ a:hover{
 }
 
 ul {
+    text-align: center;
     padding: 10px;
     font-size: large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -65,7 +66,7 @@ ul {
     font-style: italic;
 }
 
-ul ~ li::marker{
+ul li::marker{
     color: cornflowerblue;
     content: '<> ';
     font-size: 1.1em;
