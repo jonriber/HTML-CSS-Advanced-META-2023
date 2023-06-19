@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.my-effect{
+    background-color: blue;
+    min-height: 100px;
+    min-width: 100px;
+}
+
+.my-effect:hover{
+    animation: myanimation 10s infinite ease-in-out
+
+}
+
+@keyframes myanimation{
+    0%{
+        width: 50px;
+    }
+    35%{
+        width: 25px;
+        height: 50px;
+    }
+    50%{
+        transform: scale(1.2) translate(500px);
+    }
+    
+    100%{
+        width: 100px;
+        height: 200px;
+        background-color: red;
+    }
+}
