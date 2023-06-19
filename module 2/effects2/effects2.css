@@ -12,7 +12,7 @@ body{
 }
 
 .my-effect:hover{
-    animation: myanimation 10s infinite ease-in-out
+    animation: myanimation 10s infinite ease-in-out alternate-reverse
 
 }
 
@@ -33,4 +33,31 @@ body{
         height: 200px;
         background-color: red;
     }
+}
+
+.ball{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    border-radius: 99px;
+    /* animation-direction: alternate; */
+    animation: boucing 2s infinite ease-in-out alternate-reverse
+}
+
+@keyframes boucing{
+    0%{
+        transform: translateY(0)
+    }
+    /* 50%{
+        transform: translateY(-110px)
+    } */
+    100%{
+        transform: translateY(-200px)
+    }
+    /* from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-100px);
+    } */
 }
