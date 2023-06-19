@@ -24,7 +24,8 @@
 }
 
 .letters >p:nth-child(even):hover{
-    transform: rotateY(360deg);
+    transform: rotateY(720deg) skew(10deg);
+    /* transform: skew(10deg); */
 
 }
 
